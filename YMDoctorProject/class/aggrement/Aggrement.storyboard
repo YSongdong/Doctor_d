@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cvj-NT-iGw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--用户协议-->
+        <scene sceneID="zqb-9S-BCb">
+            <objects>
+                <viewController storyboardIdentifier="AggrementViewControllerID" title="用户协议" automaticallyAdjustsScrollViewInsets="NO" id="Cvj-NT-iGw" customClass="AggrementViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="boO-Wa-tcR"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Fe-Gd-D4w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jSr-Td-5qs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYx-xS-zhe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Fe-Gd-D4w" firstAttribute="top" secondItem="FYx-xS-zhe" secondAttribute="bottom" id="IWx-5e-coz"/>
+                            <constraint firstItem="FYx-xS-zhe" firstAttribute="leading" secondItem="jSr-Td-5qs" secondAttribute="leading" id="LnE-24-ZRN"/>
+                            <constraint firstAttribute="trailing" secondItem="FYx-xS-zhe" secondAttribute="trailing" id="dac-4z-vRK"/>
+                            <constraint firstItem="FYx-xS-zhe" firstAttribute="top" secondItem="boO-Wa-tcR" secondAttribute="bottom" id="yW5-xs-UEI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="FYx-xS-zhe" id="I8G-3G-s7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhF-ND-fXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="121"/>
+        </scene>
+    </scenes>
+</document>

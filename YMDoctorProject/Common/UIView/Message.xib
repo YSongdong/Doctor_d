@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="l03-in-Psa" customClass="MessageView">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-yu-k9B">
+                    <rect key="frame" x="0.0" y="0.0" width="381" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="发送在线消息" image="message">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendMessageEvent:" destination="l03-in-Psa" eventType="touchUpInside" id="PYE-E6-D9y"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naX-uK-gHR">
+                    <rect key="frame" x="0.0" y="41" width="381" height="1"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89411764709999997" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BvX-hz-uNb"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmW-dz-AMv">
+                    <rect key="frame" x="0.0" y="42" width="381" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="拨打电话:12343454" image="phone">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="callEvent:" destination="l03-in-Psa" eventType="touchUpInside" id="Qrc-1c-mEv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dFc-yu-k9B" firstAttribute="height" secondItem="l03-in-Psa" secondAttribute="height" multiplier="0.5" id="0d2-py-ByZ"/>
+                <constraint firstItem="dFc-yu-k9B" firstAttribute="leading" secondItem="l03-in-Psa" secondAttribute="leading" id="1HT-um-bRE"/>
+                <constraint firstItem="naX-uK-gHR" firstAttribute="top" secondItem="dFc-yu-k9B" secondAttribute="bottom" id="5uS-8f-E5B"/>
+                <constraint firstItem="RmW-dz-AMv" firstAttribute="height" secondItem="l03-in-Psa" secondAttribute="height" multiplier="0.5" id="9rU-IE-Hti"/>
+                <constraint firstItem="naX-uK-gHR" firstAttribute="leading" secondItem="l03-in-Psa" secondAttribute="leading" id="Nin-jH-NxQ"/>
+                <constraint firstItem="dFc-yu-k9B" firstAttribute="top" secondItem="l03-in-Psa" secondAttribute="top" id="OBR-Aa-bi2"/>
+                <constraint firstItem="RmW-dz-AMv" firstAttribute="leading" secondItem="l03-in-Psa" secondAttribute="leading" id="frY-Q3-hOZ"/>
+                <constraint firstAttribute="trailing" secondItem="RmW-dz-AMv" secondAttribute="trailing" id="ila-3Q-HUR"/>
+                <constraint firstAttribute="trailing" secondItem="dFc-yu-k9B" secondAttribute="trailing" id="tUI-Zt-79l"/>
+                <constraint firstItem="RmW-dz-AMv" firstAttribute="top" secondItem="naX-uK-gHR" secondAttribute="bottom" id="tgT-yA-md4"/>
+                <constraint firstAttribute="trailing" secondItem="naX-uK-gHR" secondAttribute="trailing" id="vmn-pN-MIL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageBtn" destination="dFc-yu-k9B" id="U6z-Ef-XPs"/>
+                <outlet property="phoneNumber" destination="RmW-dz-AMv" id="hCw-cC-6G1"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="-380.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message" width="29" height="29"/>
+        <image name="phone" width="29" height="29"/>
+    </resources>
+</document>

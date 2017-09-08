@@ -1,0 +1,58 @@
+//
+//  PrefixHeader.pch
+//  YMDoctorProject
+//
+//  Created by Ray on 2017/1/3.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "BaseViewController.h"
+#import "GloableFiles.h"
+#import "UIView+Rect.h"
+#import "UIView+ActiveIndactorView.h"
+#import "AdaptScreenHelp.h"
+#import "NSString+Extention.h"
+#import "UIImageView+CommonImageView.h"
+#import "SortlistViewController.h"
+#import "UIButton+CommonButton.h"
+#import "AFNetworking.h"
+
+
+#import "Masonry.h"
+#import "NSString+BitusStringUtils.h"
+#import "YYModel.h"
+#import "KRMainNetTool.h"
+
+
+#import "NetworkManager.h"
+#import "KRMainNetTool.h"
+#import "URL.h"
+#import "UILabel+CommonLabel.h"
+#import "UIColor+CustomColor.h"
+#import "UIColor+LSFoundation.h"
+#import "AlertView.h"
+#import "SearchTextField.h"
+#import "NSObject+UserInfo.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "DemandModel.h"
+#import "Person.h"
+#import <MBProgressHUD.h>
+#import "MJRefresh.h"
+#import "NSObject+YMDeletNull.h"
+#import "YMUserInfo.h"
+#import <NSObject+YYModel.h>
+
+
+#import "XWScanImage.h"//查看大图
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+
+#endif /* PrefixHeader_pch */

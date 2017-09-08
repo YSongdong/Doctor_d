@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableHeadView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personback.png" translatesAutoresizingMaskIntoConstraints="NO" id="uuP-v9-gyz">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Nvv-sf-kfq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主任医生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hw-nd-eQd">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.4039215686" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9U-CP-leV">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="GH8-FA-PZt"/>
+                        <constraint firstAttribute="width" secondItem="F9U-CP-leV" secondAttribute="height" multiplier="1:1" id="Wzw-I5-VNS"/>
+                    </constraints>
+                    <state key="normal" image="head.png"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="36"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杨勇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw9-UV-scb">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LV58" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb4-p1-2Of">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.99607843137254903" green="0.59999999999999998" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq5-Ny-rsd">
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.59999999999999998" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.95283776519999996" green="0.95300072430000005" blue="0.95282751320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆西南医院医学院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUg-Wo-gPg">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40392156862745099" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ydv-bw-jwN">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="成交量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-5q-G7T">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.4039215686" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浏览量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-4d-hEd">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.4039215686" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好评率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfk-wA-HHJ">
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.4039215686" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.9370916485786438" green="0.93694382905960083" blue="0.95754462480545044" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Hw-nd-eQd" firstAttribute="leading" secondItem="pUg-Wo-gPg" secondAttribute="trailing" constant="15" id="0yz-fE-vPs"/>
+                <constraint firstItem="wb4-p1-2Of" firstAttribute="leading" secondItem="Tw9-UV-scb" secondAttribute="trailing" constant="7" id="6pw-AM-YKm"/>
+                <constraint firstItem="wb4-p1-2Of" firstAttribute="centerY" secondItem="Tw9-UV-scb" secondAttribute="centerY" id="Be4-os-g7G"/>
+                <constraint firstItem="Tw9-UV-scb" firstAttribute="leading" secondItem="F9U-CP-leV" secondAttribute="leading" id="H18-h9-COR"/>
+                <constraint firstItem="uuP-v9-gyz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HpR-dM-CN6"/>
+                <constraint firstItem="ydv-bw-jwN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="IWk-IW-wqj"/>
+                <constraint firstItem="pUg-Wo-gPg" firstAttribute="centerX" secondItem="Tw9-UV-scb" secondAttribute="centerX" id="LTS-6Y-W5V"/>
+                <constraint firstItem="pUg-Wo-gPg" firstAttribute="top" secondItem="Tw9-UV-scb" secondAttribute="bottom" constant="10" id="OaF-e2-si1"/>
+                <constraint firstItem="Uq5-Ny-rsd" firstAttribute="centerY" secondItem="wb4-p1-2Of" secondAttribute="centerY" id="X4w-a2-dOF"/>
+                <constraint firstItem="uuP-v9-gyz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Xzk-X4-E8E"/>
+                <constraint firstAttribute="trailing" secondItem="ydv-bw-jwN" secondAttribute="trailing" constant="30" id="Yc6-de-9n4"/>
+                <constraint firstItem="Tw9-UV-scb" firstAttribute="top" secondItem="F9U-CP-leV" secondAttribute="bottom" constant="17" id="hiw-Uc-oWs"/>
+                <constraint firstItem="3Hw-nd-eQd" firstAttribute="centerY" secondItem="pUg-Wo-gPg" secondAttribute="centerY" id="i2j-EP-CoL"/>
+                <constraint firstItem="ydv-bw-jwN" firstAttribute="top" secondItem="pUg-Wo-gPg" secondAttribute="bottom" constant="10" id="jub-2Y-cWr"/>
+                <constraint firstItem="uuP-v9-gyz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uX9-6d-8Lf" customClass="uiview"/>
+                <constraint firstItem="F9U-CP-leV" firstAttribute="centerY" secondItem="uuP-v9-gyz" secondAttribute="centerY" constant="-30" id="vW4-i4-632"/>
+                <constraint firstItem="Uq5-Ny-rsd" firstAttribute="leading" secondItem="wb4-p1-2Of" secondAttribute="trailing" constant="7" id="yQb-Y3-LtF"/>
+                <constraint firstItem="F9U-CP-leV" firstAttribute="centerX" secondItem="uuP-v9-gyz" secondAttribute="centerX" id="yzv-is-Mig"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backImageView" destination="uuP-v9-gyz" id="Czl-JG-WLX"/>
+                <outlet property="doctor" destination="3Hw-nd-eQd" id="c5f-7c-Exy"/>
+                <outlet property="headBtn" destination="F9U-CP-leV" id="yHN-L3-SIf"/>
+                <outlet property="hospitalLabel" destination="pUg-Wo-gPg" id="vOI-uy-Lpo"/>
+                <outlet property="levelLabel" destination="wb4-p1-2Of" id="UAV-eo-ELc"/>
+                <outlet property="nameLabel" destination="Tw9-UV-scb" id="3EA-wi-HPQ"/>
+                <outlet property="scanLabel" destination="iBk-4d-hEd" id="EtZ-6u-iYf"/>
+                <outlet property="successDealLabel" destination="Gdu-5q-G7T" id="ar0-Ja-Ph4"/>
+                <outlet property="valuatePercentLabel" destination="kfk-wA-HHJ" id="AWI-KP-GX1"/>
+            </connections>
+            <point key="canvasLocation" x="-172" y="-388"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="head.png" width="234" height="226"/>
+        <image name="personback.png" width="548" height="258"/>
+    </resources>
+</document>

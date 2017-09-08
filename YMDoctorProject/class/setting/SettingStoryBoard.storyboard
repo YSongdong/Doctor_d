@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Lu9-U9-3fC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--设置-->
+        <scene sceneID="3iT-mL-M43">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="Lu9-U9-3fC" customClass="SetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gx8-w9-URg"/>
+                        <viewControllerLayoutGuide type="bottom" id="yfm-eB-FUY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="laB-t9-Jeg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="rWo-bn-0wV">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SetCellIdentifier" id="r5Y-Tr-N9z" customClass="SetTableViewCell">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r5Y-Tr-N9z" id="3wI-eG-Qns">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码修改" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqJ-cI-rel">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AqJ-cI-rel" firstAttribute="centerY" secondItem="3wI-eG-Qns" secondAttribute="centerY" id="far-BH-M1o"/>
+                                                <constraint firstItem="AqJ-cI-rel" firstAttribute="leading" secondItem="3wI-eG-Qns" secondAttribute="leadingMargin" constant="13" id="qtl-mr-23F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleName" destination="AqJ-cI-rel" id="sOk-cd-E0k"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Lu9-U9-3fC" id="qZS-4V-kwm"/>
+                                    <outlet property="delegate" destination="Lu9-U9-3fC" id="3C1-fX-Ybq"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-gW-1Ly">
+                                <color key="backgroundColor" red="0.99871522188186646" green="0.29845339059829712" blue="0.29735890030860901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="退出登录"/>
+                                <connections>
+                                    <action selector="loginOutOrIn:" destination="Lu9-U9-3fC" eventType="touchUpInside" id="cdK-Hp-VaJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yfm-eB-FUY" firstAttribute="top" secondItem="rWo-bn-0wV" secondAttribute="bottom" constant="45" id="2mq-uz-2G5"/>
+                            <constraint firstAttribute="trailing" secondItem="rWo-bn-0wV" secondAttribute="trailing" id="78N-b2-8R1"/>
+                            <constraint firstItem="rWo-bn-0wV" firstAttribute="leading" secondItem="laB-t9-Jeg" secondAttribute="leading" id="DAL-ZU-e7V"/>
+                            <constraint firstItem="x8x-gW-1Ly" firstAttribute="top" secondItem="rWo-bn-0wV" secondAttribute="bottom" id="M28-jz-2q7"/>
+                            <constraint firstItem="x8x-gW-1Ly" firstAttribute="leading" secondItem="laB-t9-Jeg" secondAttribute="leading" id="O34-25-8ND"/>
+                            <constraint firstAttribute="bottom" secondItem="x8x-gW-1Ly" secondAttribute="bottom" id="Q8E-Zb-wQC"/>
+                            <constraint firstAttribute="trailing" secondItem="x8x-gW-1Ly" secondAttribute="trailing" id="sUB-a4-msP"/>
+                            <constraint firstItem="rWo-bn-0wV" firstAttribute="top" secondItem="Gx8-w9-URg" secondAttribute="bottom" id="yVE-Be-LO3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置" id="1EA-uy-ZO7"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="x8x-gW-1Ly" id="OBQ-Sz-smi"/>
+                        <outlet property="tableView" destination="rWo-bn-0wV" id="eT1-ml-GtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COE-BC-6AT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-262"/>
+        </scene>
+    </scenes>
+</document>

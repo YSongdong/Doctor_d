@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hxx-0w-ofj" customClass="ShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnh-Cj-clG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoW-zL-ixq">
+                    <rect key="frame" x="0.0" y="496" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GOE-dI-cqU"/>
+                    </constraints>
+                    <state key="normal" title="分享给用户"/>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YP-OQ-ybE">
+                    <rect key="frame" x="0.0" y="547" width="375" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="veA-XI-x2W"/>
+                    </constraints>
+                    <state key="normal" title="分享给医生">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhq-jr-FPh">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.018645260483026505" green="0.47766226530075073" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="luK-Js-HvJ"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelBtnClick:" destination="Hxx-0w-ofj" eventType="touchUpInside" id="ZSq-GL-N4e"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vhq-jr-FPh" firstAttribute="leading" secondItem="Hxx-0w-ofj" secondAttribute="leading" id="1YW-OW-mkc"/>
+                <constraint firstItem="1YP-OQ-ybE" firstAttribute="leading" secondItem="Hxx-0w-ofj" secondAttribute="leading" id="3lg-ob-lIK"/>
+                <constraint firstAttribute="trailing" secondItem="NoW-zL-ixq" secondAttribute="trailing" id="6me-ne-ZRF"/>
+                <constraint firstAttribute="bottom" secondItem="Vhq-jr-FPh" secondAttribute="bottom" id="J6y-EO-Cgv"/>
+                <constraint firstAttribute="trailing" secondItem="1YP-OQ-ybE" secondAttribute="trailing" id="Qmz-Wz-6DJ"/>
+                <constraint firstItem="hnh-Cj-clG" firstAttribute="leading" secondItem="Hxx-0w-ofj" secondAttribute="leading" id="WUy-aa-CFQ"/>
+                <constraint firstAttribute="trailing" secondItem="hnh-Cj-clG" secondAttribute="trailing" id="bFN-v2-0P3"/>
+                <constraint firstAttribute="trailing" secondItem="Vhq-jr-FPh" secondAttribute="trailing" id="cJG-Jl-0Dy"/>
+                <constraint firstItem="1YP-OQ-ybE" firstAttribute="top" secondItem="NoW-zL-ixq" secondAttribute="bottom" constant="1" id="nBQ-Go-IIM"/>
+                <constraint firstItem="Vhq-jr-FPh" firstAttribute="top" secondItem="1YP-OQ-ybE" secondAttribute="bottom" constant="20" id="qJO-BX-bVq"/>
+                <constraint firstItem="hnh-Cj-clG" firstAttribute="top" secondItem="Hxx-0w-ofj" secondAttribute="top" id="ryH-fr-bNX"/>
+                <constraint firstItem="NoW-zL-ixq" firstAttribute="leading" secondItem="Hxx-0w-ofj" secondAttribute="leading" id="vTh-CU-2Gh"/>
+                <constraint firstAttribute="bottom" secondItem="hnh-Cj-clG" secondAttribute="bottom" id="xiM-j2-HtN"/>
+            </constraints>
+            <connections>
+                <outlet property="doctorShare" destination="1YP-OQ-ybE" id="Gij-Pv-wwV"/>
+                <outlet property="userShare" destination="NoW-zL-ixq" id="I7U-o8-auU"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="26"/>
+        </view>
+    </objects>
+</document>

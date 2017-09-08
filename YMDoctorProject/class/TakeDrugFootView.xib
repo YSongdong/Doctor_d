@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TakeDrugFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlB-4e-Qct">
+                    <rect key="frame" x="10" y="0.0" width="355" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="etB-yD-Efk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="  新增药品" image="healthy_add">
+                        <color key="titleColor" red="0.29803921570000003" green="0.65098039220000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addDrugBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nt9-Pu-Z7s"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0SK-O3-DLW">
+                    <rect key="frame" x="10" y="43" width="355" height="93"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="医生" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daw-qg-Ryd">
+                            <rect key="frame" x="10" y="10" width="335" height="17"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="daw-qg-Ryd" firstAttribute="top" secondItem="0SK-O3-DLW" secondAttribute="top" constant="10" id="5KL-Ks-OBL"/>
+                        <constraint firstItem="daw-qg-Ryd" firstAttribute="leading" secondItem="0SK-O3-DLW" secondAttribute="leading" constant="10" id="KHh-Sm-yBc"/>
+                        <constraint firstAttribute="trailing" secondItem="daw-qg-Ryd" secondAttribute="trailing" constant="10" id="ZCS-y1-VWh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启通知栏提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3a-ku-Avt">
+                    <rect key="frame" x="10" y="146" width="107.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dxz-sY-UTD">
+                    <rect key="frame" x="316" y="140" width="51" height="31"/>
+                    <connections>
+                        <action selector="FootSwitchAction:" destination="iN0-l3-epB" eventType="valueChanged" id="dZu-ZI-nNM"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dxz-sY-UTD" firstAttribute="centerY" secondItem="w3a-ku-Avt" secondAttribute="centerY" id="0UO-Sx-mOi"/>
+                <constraint firstItem="0SK-O3-DLW" firstAttribute="leading" secondItem="UlB-4e-Qct" secondAttribute="leading" id="8IO-ZY-y84"/>
+                <constraint firstItem="w3a-ku-Avt" firstAttribute="leading" secondItem="0SK-O3-DLW" secondAttribute="leading" id="ApC-8z-psv"/>
+                <constraint firstItem="UlB-4e-Qct" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ON6-Rr-guO"/>
+                <constraint firstItem="0SK-O3-DLW" firstAttribute="trailing" secondItem="UlB-4e-Qct" secondAttribute="trailing" id="PT9-vM-YpF"/>
+                <constraint firstItem="w3a-ku-Avt" firstAttribute="top" secondItem="0SK-O3-DLW" secondAttribute="bottom" constant="10" id="Vjr-aU-PJQ"/>
+                <constraint firstAttribute="trailing" secondItem="Dxz-sY-UTD" secondAttribute="trailing" constant="10" id="dtz-Bu-izf"/>
+                <constraint firstAttribute="trailing" secondItem="UlB-4e-Qct" secondAttribute="trailing" constant="10" id="eow-tr-RSD"/>
+                <constraint firstItem="0SK-O3-DLW" firstAttribute="top" secondItem="UlB-4e-Qct" secondAttribute="bottom" constant="9" id="iKG-Ag-7HU"/>
+                <constraint firstItem="UlB-4e-Qct" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="lzW-Xc-ePY"/>
+                <constraint firstAttribute="bottom" secondItem="w3a-ku-Avt" secondAttribute="bottom" constant="10" id="x6o-zk-zpt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addDrugBtn" destination="UlB-4e-Qct" id="hdN-oV-j9O"/>
+                <outlet property="backGrouView" destination="0SK-O3-DLW" id="qcG-4c-492"/>
+                <outlet property="doctorFootTF" destination="daw-qg-Ryd" id="YWQ-MW-N2A"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="299"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="healthy_add" width="12" height="12"/>
+    </resources>
+</document>
