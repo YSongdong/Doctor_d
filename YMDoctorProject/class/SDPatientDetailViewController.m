@@ -206,8 +206,11 @@
     params[@"health_id"] =self.health_id;
     params[@"member_id"] = [self getMember_id];
     [[KRMainNetTool sharedKRMainNetTool] sendRequstWith:PatientWarn_Url params:params.copy withModel:nil complateHandle:^(id showdata, NSString *error) {
-       
-        [weakSelf alertViewShow:error];
+        if (!error) {
+            [weakSelf alertViewShow:@"提醒就诊成功！"];
+        }else{
+            [weakSelf alertViewShow:error];
+        }
         
     }];
 
